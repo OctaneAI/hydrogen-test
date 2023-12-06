@@ -1,27 +1,27 @@
-import {useNonce} from '@shopify/hydrogen';
-import {
-  defer,
-  type SerializeFrom,
-  type LoaderFunctionArgs,
-} from '@shopify/remix-oxygen';
 import {
   Links,
+  LiveReload,
   Meta,
   Outlet,
   Scripts,
-  LiveReload,
-  useMatches,
-  useRouteError,
-  useLoaderData,
   ScrollRestoration,
   isRouteErrorResponse,
+  useLoaderData,
+  useMatches,
+  useRouteError,
   type ShouldRevalidateFunction,
 } from '@remix-run/react';
+import {useNonce} from '@shopify/hydrogen';
 import type {CustomerAccessToken} from '@shopify/hydrogen/storefront-api-types';
-import favicon from '../public/favicon.svg';
-import resetStyles from './styles/reset.css';
-import appStyles from './styles/app.css';
+import {
+  defer,
+  type LoaderFunctionArgs,
+  type SerializeFrom,
+} from '@shopify/remix-oxygen';
 import {Layout} from '~/components/Layout';
+import favicon from '../public/favicon.svg';
+import appStyles from './styles/app.css';
+import resetStyles from './styles/reset.css';
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
@@ -124,6 +124,7 @@ export default function App() {
           <Outlet />
         </Layout>
         <ScrollRestoration nonce={nonce} />
+        {/* <Script src="http://alisonoct.ngrok.io/5jf2eeky8096ucd9/quiz.js" /> */}
         <Scripts nonce={nonce} />
         <LiveReload nonce={nonce} />
       </body>
