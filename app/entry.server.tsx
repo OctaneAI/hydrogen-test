@@ -14,15 +14,17 @@ export default async function handleRequest(
     styleSrc: [
       "'self'",
       "'unsafe-inline'",
+      'https://app.octaneai.com',
       'https://alisonoct.ngrok.io',
       'https://cdn.shopify.com',
       'https://shopify.com',
     ],
-    connectSrc: ['*', 'https://alisonoct.ngrok.io'],
+    connectSrc: ['*', 'https://alisonoct.ngrok.io', 'https://app.octaneai.com'],
     scriptSrc: [
       "'self'",
       "'unsafe-eval'",
       "'unsafe-inline'",
+      'https://app.octaneai.com',
       'https://alisonoct.ngrok.io',
       'https://cdn.shopify.com',
       'https://shopify.com',

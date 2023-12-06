@@ -8,7 +8,7 @@ export default function Homepage() {
     const octaneScript = document.createElement('script');
     octaneScript.setAttribute(
       'src',
-      'https://alisonoct.ngrok.io/5jf2eeky8096ucd9/quiz.js',
+      'https://app.octaneai.com/kucsxqo0s89oqezd/quiz.js',
     );
     octaneScript.setAttribute('async', 'true');
     octaneScript.setAttribute('defer', 'true');
@@ -41,7 +41,7 @@ export default function Homepage() {
     <>
       <div
         className="octane-ai-quiz"
-        data-quiz-id="aCOvB9sXjBxNQxVK"
+        data-quiz-id="JwXSSyUcC9VYyC1h"
         data-embed-type="fullpage"
         data-mobile-height="match_browser"
         data-desktop-height="match_browser"
