@@ -18,11 +18,14 @@ export default async function handleRequest(
       'https://cdn.shopify.com',
       'https://shopify.com',
     ],
+    connectSrc: ['*', 'https://alisonoct.ngrok.io'],
     scriptSrc: [
       "'self'",
       "'unsafe-eval'",
       "'unsafe-inline'",
       'https://alisonoct.ngrok.io',
+      'https://cdn.shopify.com',
+      'https://shopify.com',
     ],
     imgSrc: ['*', 'data:*'],
   });
